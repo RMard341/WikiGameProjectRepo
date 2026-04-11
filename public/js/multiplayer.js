@@ -439,9 +439,9 @@ function renderRoom(room) {
 
         if (winner) {
             if (winner.id === mySocketId) {
-                showMessage('You won! You reached ' + room.goalArticle + '.');
+                showMessage('You won! ');
             } else {
-                showMessage(winner.name + ' won the game by reaching ' + room.goalArticle + '.');
+                showMessage(winner.name + ' won the game ');
             }
         } else {
             showMessage('Game finished.');

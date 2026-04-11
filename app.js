@@ -226,7 +226,7 @@ io.on('connection', (socket) => {
             return;
         }
 
-        if (room.players.length >= 4) {
+        if (room.players.length >= 50) {
             if (callback) {
                 callback({ success: false, message: 'Room is full' });
             }
